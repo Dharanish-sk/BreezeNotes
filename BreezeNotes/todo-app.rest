@@ -1,0 +1,48 @@
+### get/
+
+GET http://localhost:5000
+
+### post register
+POST http://localhost:5000/auth/register
+Content-Type: application/json
+
+{
+    "username":"dharanish",
+    "password":"1234"
+}
+
+### post login
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+    "username":"dharanish",
+    "password":"1234"
+}
+
+### fetch all todos
+GET http://localhost:5000/todos
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU1MzU0MjAzLCJleHAiOjE3NTU0NDA2MDN9.OlHWFlkfIv2tgGJ26ocmXTiqKj1eZVi5MfQQT9osol0
+### post task
+POST http://localhost:5000/todos
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU1MzU0MjAzLCJleHAiOjE3NTU0NDA2MDN9.OlHWFlkfIv2tgGJ26ocmXTiqKj1eZVi5MfQQT9osol0
+Content-Type: application/json
+
+{
+    "task":"Learn Node.js"
+}
+
+
+### put update todo
+PUT http://localhost:5000/todos/2?page=4
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU1MzU0MjAzLCJleHAiOjE3NTU0NDA2MDN9.OlHWFlkfIv2tgGJ26ocmXTiqKj1eZVi5MfQQT9osol0
+Content-Type: application/json
+
+{
+   "completed":1
+ }
+
+### dalete  todo tasks
+DELETE  http://localhost:5000/todos/2?page=4
+Authorization:eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzU1MzU0MjAzLCJleHAiOjE3NTU0NDA2MDN9.OlHWFlkfIv2tgGJ26ocmXTiqKj1eZVi5MfQQT9osol0
+ 
